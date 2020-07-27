@@ -1,0 +1,22 @@
+body{
+  width: 97%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.nav-link{
+  position: relative;
+}
+.nav-link::after{
+  content: '';
+  background-color: black;
+  width: 1px;
+  position: absolute;
+  height: 40%;
+  top: 28%;
+  right: -2%;
+}
+li:nth-last-child(2)::after{
+  display: none;
+}
+
+
