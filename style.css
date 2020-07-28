@@ -1,12 +1,26 @@
+html{
+  background-color: rgb(245, 245, 245);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+}
 body{
-  width: 97%;
+  width: 96%;
   margin: 0 auto;
   box-sizing: border-box;
 }
-.nav-link{
+.nav-item{
   position: relative;
 }
-.nav-link::after{
+
+.nav-link{
+  color: black;
+}
+
+.nav-link:hover{
+  color: red;
+}
+
+.main-nav .nav-item::after{
   content: '';
   background-color: black;
   width: 1px;
@@ -15,8 +29,152 @@ body{
   top: 28%;
   right: -2%;
 }
-li:nth-last-child(2)::after{
+li:last-child::after{
   display: none;
 }
+.banner{
+  background-color: red;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 94% 87%, 0 87%);
+}
+
+.title{
+  font-family: 'Merriweather', serif;
+  color: white;
+  font-weight: 900;
+}
+
+.nav{
+  font-size: 18px;
+}
+
+.nav-item.active a{
+  font-weight: bolder;
+  color: black;
+}
+
+.sub-nav ul li a{
+  color: rgb(110 , 110, 110);
+  font-size: 1rem;
+  letter-spacing: -0.5;
+}
+
+.sub-nav{
+  position: relative;
+}
+
+.sub-nav::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2%;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+main h6{
+  color: grey;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.sub-nav::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2%;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.card-title a{
+  color: black;
+  font-weight: 900;
+}
+
+.image{
+  position: relative;
+}
+
+.tag{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: lightgray;
+  color: red;
+  padding: 0.3rem;
+}
+
+.versus-div{
+  position: relative;
+  z-index: 1;
+}
+
+.versus::before{
+  content: '';
+  width: 100%;
+  height: 0.3%;
+  background-color: rgb(220 , 220, 220);;
+  position: absolute;
+  left: 0;
+  top: 52%;
+  z-index: -1;
+}
+
+
+
+.versus::after{
+  content: '';
+  width: 100%;
+  height: 0.3%;
+  background-color: rgb(220 , 220, 220);
+  position: absolute;
+  right: 0;
+  top: 48%;
+  z-index: -1;
+}
+
+.versus-last {
+  position: relative;
+}
+
+.versus-last::after {
+  content: '';
+  width: 120%;
+  height: 5%;
+  background-color: rgb(220 , 220, 220);
+  position: absolute;
+  bottom: 0;
+}
+
+.opin{
+  position: relative;
+}
+
+.opin::after {
+  content: '';
+  width: 100%;
+  height: 1%;
+  background-color: rgb(220 , 220, 220);
+  position: absolute;
+  bottom: -20%;
+}
+
+.more-stories{
+  position: relative;
+}
+
+.more-stories::after {
+  content: '';
+  width: 100%;
+  height: 1%;
+  background-color: rgb(220 , 220, 220);
+  position: absolute;
+  bottom: -5%;
+}
+
+
+
 
 
